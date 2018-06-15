@@ -13,5 +13,7 @@ RSpec.describe Category, type: :model do
      PostCategory.create(post: post_2, category: cat_2)
      PostCategory.create(post: post_3, category: cat_1)
    end
-  it ""
+  it "has a name" do
+    expect(cat_1.name).to eq("Exciting")
+  end
 end
