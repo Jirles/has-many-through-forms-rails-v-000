@@ -15,6 +15,7 @@ RSpec.describe PostCategory, type: :model do
   end
 
   it "has a category_id and a post_id" do
-     expect(pc_2.category_id).to eq()
+     expect(pc_2.category_id).to eq(2)
+     expect(pc_2.post_id).to eq(2)
   end
 end
