@@ -9,7 +9,9 @@ RSpec.describe Category, type: :model do
      cat_1 = Category.create(name: "Exciting")
      cat_2 = Category.create(name: "Meh")
 
-
+     PostCategory.create(post: post_1, category: cat_1)
+     PostCategory.create(post: post_2, category: cat_2)
+     PostCategory.create(post: post_3, category: cat_1)
    end
   it ""
 end
