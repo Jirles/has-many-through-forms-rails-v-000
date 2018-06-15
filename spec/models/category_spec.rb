@@ -16,4 +16,9 @@ RSpec.describe Category, type: :model do
   it "has a name" do
     expect(cat_1.name).to eq("Exciting")
   end
+
+  it 'has many posts through post_categories' do
+    expect(cat_1.posts).to include(post_3)
+    expect(cat_1.posts.count).to eq(2)
+  end
 end
